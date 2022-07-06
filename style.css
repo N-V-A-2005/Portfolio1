@@ -1,10 +1,10 @@
 /*importing the font style from google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
 * {
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Finlandica', sans-serif;
 }
 /*media query for mobile*/
 @media screen and (max-width: 600px) {
@@ -45,12 +45,7 @@ body {
   top: 0;
   z-index: 1;
   box-shadow: 3px 5px 20px 3px rgb(39, 39, 39);
-  background-color: #293183;
-  /*navbar transition and hover effect*/
-  transition: background-color 0.3s ease 0s;
-}
-.navbar:hover {
-  background-color: #0f124d;
+  background-color: #dddee7;
 }
 /*---- navbar ending part👆---*/
 
@@ -117,7 +112,7 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 70px;
-  background: #b8ffbd;
+  background: #161616;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -197,7 +192,7 @@ body {
   width: 100%;
   height: 100vh;
   margin-top: 4em;
-background-image: linear-gradient(43deg, #ffd4d4fc 0%, #d3ffee 100%);
+  background: rgb(200, 255, 254);
 
 }
 #hicon {

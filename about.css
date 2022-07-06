@@ -1,43 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
 body {
     margin: 0;
     scroll-behavior: smooth;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Finlandica', sans-serif;
 }
 .head {
     width: 100%;
     height: 4em;
     position: fixed;
     top: 0;
-    background-color: #2e0e38;
+    background-color: #161616;
     box-shadow: 0px 3px 10px #000;
     z-index: 1;
 }
 #hdh1 {
-    color: aliceblue;
+    color: rgb(80, 142, 200);
     font-weight: lighter;
     float: left;
     margin-left: 0.5em;
-    margin-top: 0.5em;
+    margin-top: 0.4em;
+    transition: all 0.3s ease-in-out;
 }
 #hdh1:hover {
-    background: -webkit-linear-gradient(45deg,rgb(255, 110, 110) ,white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    cursor: cell;
+    color: rgb(141, 70, 141);
 }
 .body {
     width: 100%;
     height: 100%;
     margin-top: 4em;
-    background: linear-gradient(256deg, rgb(199, 255, 255), rgb(189, 255, 207));
+    background: rgb(255, 255, 255);
     margin-right:auto;
 }
 /*profile picture*/
 #mpic {
     width: 15em;
     height: auto;
-    border-radius: 12px;
     padding-top: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -46,7 +44,6 @@ body {
 }
 /*paragraph section*/
 #abme {
-    cursor: pointer;
     font-size: 1.8em;
     text-align: center;
     margin-left: 5%;
@@ -56,6 +53,9 @@ body {
     padding-bottom: 1em;
     color: rgb(0, 0, 0);
 }
+#abme::selection {
+    background-color: aquamarine;
+}
 #rhome {
     width: 3.2em;
     height: 3.2em;
@@ -63,8 +63,8 @@ body {
     opacity: 0.5;
     margin-top: 0.5em;
     margin-right: 0.5em;
+    transition: all 0.3s ease-in-out;
 }
 #rhome:hover {
-    filter: brightness(3);
-    transition: all 0.7s ease-in-out;
+    filter: invert(90%);
 }
