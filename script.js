@@ -1,6 +1,3 @@
-function hello(){
-    alert("Click OK to open a new tab");
-}
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
 body {
     margin: 0;
     scroll-behavior: smooth;
@@ -7,10 +8,10 @@ body {
 .head {
     width: 100%;
     height: 4em;
-    position: fixed;
+    position: sticky;
     top: 0;
     background-color: #161616;
-    box-shadow: 0px 3px 10px #000;
+    box-shadow: 0px 3px 10px rgb(67, 67, 67);
     z-index: 1;
 }
 #hdh1 {
@@ -36,16 +37,21 @@ body {
 #mpic {
     width: 15em;
     height: auto;
-    padding-top: 1em;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-bottom: 1em;
+    animation: picture 4s infinite alternate;
+}
+#mpic::selection {
+    background-color: #000;
 }
 /*paragraph section*/
 #abme {
     font-size: 1.8em;
     text-align: center;
+    line-height: 3rem;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 1em;
@@ -54,7 +60,8 @@ body {
     color: rgb(0, 0, 0);
 }
 #abme::selection {
-    background-color: aquamarine;
+    color: rgb(213, 213, 213);
+    background-color: rgb(58, 58, 58);
 }
 #rhome {
     width: 3.2em;
@@ -67,4 +74,55 @@ body {
 }
 #rhome:hover {
     filter: invert(90%);
+}
+
+span {
+    animation: skills 2s infinite alternate;
+}
+
+/*media query for mobile*/
+@media screen and (max-width: 600px) {
+    #abme {
+      font-size: 1.2em;
+    }
+    #mpic {
+      width: 12em;
+      height: auto;
+      border-radius: 12px;
+      padding-top: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-bottom: 1em;
+    }
+  }
+@keyframes picture {
+    0% {
+        box-shadow: 5px 5px 7px grey;
+    }
+    50% {
+        box-shadow: 0 0 0 grey;
+    }
+    100% {
+        box-shadow: 5px 5px 7px grey;
+    }
+}
+
+@keyframes skills {
+    0% {
+        color: #000;
+    }
+    50% {
+        color: rgb(111, 111, 173);
+    }
+    100% {
+        color: #000;
+    }
+}
+
+#abme::first-line {
+    color: rgb(48, 1, 84);
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-family: 'Splash', cursive;
 }

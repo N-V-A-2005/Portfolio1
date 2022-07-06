@@ -1,29 +1,11 @@
 /*importing the font style from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
 * {
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Finlandica', sans-serif;
-}
-/*media query for mobile*/
-@media screen and (max-width: 600px) {
-  #hdh1 {
-    font-size: 1.5em;
-  }
-  #abme {
-    font-size: 1.2em;
-  }
-  #mpic {
-    width: 12em;
-    height: auto;
-    border-radius: 12px;
-    padding-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 1em;
-  }
 }
 body {
   padding: 0px;
@@ -43,9 +25,9 @@ body {
   height: auto;
   position: fixed;
   top: 0;
-  z-index: 1;
-  box-shadow: 3px 5px 20px 3px rgb(39, 39, 39);
-  background-color: #dddee7;
+  z-index: 999;
+  box-shadow: 3px 3px 4px rgb(39, 39, 39);
+  background-color: #f2f3f6;
 }
 /*---- navbar ending part👆---*/
 
@@ -58,7 +40,7 @@ body {
 
 .navbar .menu-items {
   display: flex;
-  background-color: #2e2e2e;
+  background-color: #282828;
 }
 
 .navbar .nav-container li {
@@ -75,7 +57,7 @@ body {
   transition: color 0.7s 0s;
 }
 .navbar .nav-container a:hover {
-  color: rgb(232, 255, 101);
+  color: rgb(180, 158, 255);
 }
 .nav-container {
   display: block;
@@ -161,6 +143,7 @@ body {
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
   transform: rotate(45deg);
+  background-color: white;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
@@ -169,30 +152,25 @@ body {
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
+  background-color: white;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
 }/*navbar part ends here*/
 
-.typewrite{
-  text-decoration: none;
-  background: linear-gradient(45deg, rgb(4, 4, 4), rgb(0, 29, 37));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.7em;
-}
-#type {
+#heading {
   margin-left: 0.2em;
-  padding-top: 2em;
+  padding-top: 1.5em;
   margin-right: 0.4em;
+  font-size: 3.3rem;
+  font-family: 'Arima',sans-serif;
 }
 .body {
   width: 100%;
   height: 100vh;
   margin-top: 4em;
-  background: rgb(200, 255, 254);
+  background: rgb(225, 255, 255);
 
 }
 #hicon {
@@ -201,10 +179,6 @@ body {
   right: 0.1em;
   width: 2.4em;
   height:2.4em;
-}
-#hicon:hover {
-  filter: drop-shadow(0 0 0.5em rgb(23, 23, 23));
-  transition: all 1s ease-in-out;
 }
 .footer {
   position: relative;
@@ -215,4 +189,27 @@ body {
   background-color: #2e2e2e;
   font-size: medium;
   text-align: center;
+}
+
+/*resume download button*/
+#resume_downld a{
+  text-decoration: none;
+  color: rgb(237, 237, 237);
+  margin-left: 10px;
+  position: relative;
+  background-color: #2e2e2e;
+  padding: 1rem;
+  top: 3rem;
+  border-radius: 2rem;
+  border: 2px solid #2e2e2e;
+  transition: all 0.3s ease-in-out;
+}
+#resume_downld a:hover {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  color: rgb(0, 60, 180);
+  border: 2px solid #2e2e2e;
 }
